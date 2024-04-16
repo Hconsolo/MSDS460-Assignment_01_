@@ -78,7 +78,14 @@
   </ol>
 </details>
 
+<!-- CONTACT -->
+## Contact
 
+Humberto Consolo Holanda - [https://www.linkedin.com/in/hconsolo](https://www.linkedin.com/in/hconsolo) - humbertoconsoloholanda2025@u.northwestern.edu
+
+Project Link: [https://github.com/Hconsolo/MSDS460-Assignment_01_](https://github.com/Hconsolo/MSDS460-Assignment_01_)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- ABOUT THE PROJECT -->
 ## Introduction
@@ -86,15 +93,17 @@
 [![Product Name Screen Shot][product-screenshot]](https://example.com)
 
 For this week’s assignment, our exercise applied linear programming (LP) to the diet problem. This problem aims to find the minimum-cost diet (servings of food items) that satisfies the eight nutritional requirements.
-For this task, the following Python thid part libraries were used:
+
+
+### Libraries
+
+For this task, the following Python third part libraries were used:
 * Pandas - Data Wrangling and Processing
 * Matplotlib - Data Visualization
 * Seaborn - Data Visualization
-* PulP - 
-
+* PulP - Provides a modeling framework and LP optimization tool
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 
 
 ### Built With
@@ -152,6 +161,21 @@ _Below is an example of how you can instruct your audience on installing and set
 
 <!-- USAGE EXAMPLES -->
 ## Method
+
+Initially, we have gathered information on the nutrition facts of five meals from the Internet, namely Kraft Mac & Cheese , Amy's Thai Pad Thai, Fresh Express Chopped Caesar Salad Kit, Spinach Scramble, and Salmon, Rice, and Broccolis. We selected pre-packaged and ready-to-eat meals that can be easily prepared with ingredients available in the package or a simple recipe that requires no more than five ingredients. The prices and nutritional information were collected from Mariano's website. Table 01 summarizes this information along with the price of the pre-packaged meals or the pro-rated meal cost. Please note that the price does not include any costs associated with food preparation, such as utility costs or labor.
+
+However, the amount of Calcium provided by these items were not enough to converge the problem, so we decided to include Fat Free Skim Milk in the diet as a cheap option for additional Calcium.
+
+#### Table 01: Nutrition facts and prices for the meal options.
+| Food Item                              |   Price ($) |   Energy (calories) |   Sodium (mg) |   Protein (g) |   Vitamin D (mcg) |   Calcium (mg) |   Iron (mg) |   Potassium (mg) |
+|:---------------------------------------|------------:|--------------------:|--------------:|--------------:|------------------:|---------------:|------------:|-----------------:|
+| Kraft Mac & Cheese                     |        0.46 |              250    |        560    |          9    |               0   |         110    |        2.5  |           330    |
+| Amy's Thai Pad Thai                    |        6.79 |              410    |        760    |         12    |               0   |          90    |        3.9  |           360    |
+| Fresh Express Chopped Caesar Salad Kit |        1.8  |              160    |        310    |          3    |               0   |          90    |        0.9  |           190    |
+| Spinach Scramble                       |        1.16 |              161.67 |        458.17 |         13.08 |               2   |          86.68 |        2.65 |           351.42 |
+| Salmon, Rice, and Broccolis            |        3.83 |              322.5  |        549.25 |         27.5  |              12.3 |          40.75 |        1.15 |           618.5  |
+| Fat Free Skim Milk                     |        0.46 |               80    |        120    |          8    |             100   |         300    |        0    |           390    |
+
 
 Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
 
@@ -212,18 +236,6 @@ Don't forget to give the project a star! Thanks again!
 Distributed under the MIT License. See `LICENSE.txt` for more information.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-
-<!-- CONTACT -->
-## Contact
-
-Your Name - [@your_twitter](https://twitter.com/your_username) - email@example.com
-
-Project Link: [https://github.com/your_username/repo_name](https://github.com/your_username/repo_name)
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 
 
 <!-- ACKNOWLEDGMENTS -->
