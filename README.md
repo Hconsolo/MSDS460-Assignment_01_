@@ -78,26 +78,32 @@
   </ol>
 </details>
 
+<!-- CONTACT -->
+## Contact
 
+Humberto Consolo Holanda - [https://www.linkedin.com/in/hconsolo](https://www.linkedin.com/in/hconsolo) - humbertoconsoloholanda2025@u.northwestern.edu
 
-<!-- ABOUT THE PROJECT -->
-## About The Project
-
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
-
-There are many great README templates available on GitHub; however, I didn't find one that really suited my needs so I created this enhanced one. I want to create a README template so amazing that it'll be the last one you ever need -- I think this is it.
-
-Here's why:
-* Your time should be focused on creating something amazing. A project that solves a problem and helps others
-* You shouldn't be doing the same tasks over and over like creating a README from scratch
-* You should implement DRY principles to the rest of your life :smile:
-
-Of course, no one template will serve all projects since your needs may be different. So I'll be adding more in the near future. You may also suggest changes by forking this repo and creating a pull request or opening an issue. Thanks to all the people have contributed to expanding this template!
-
-Use the `BLANK_README.md` to get started.
+Project Link: [https://github.com/Hconsolo/MSDS460-Assignment_01_](https://github.com/Hconsolo/MSDS460-Assignment_01_)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+<!-- ABOUT THE PROJECT -->
+## Introduction
+
+[![Product Name Screen Shot][product-screenshot]](https://example.com)
+
+For this week’s assignment, our exercise applied linear programming (LP) to the diet problem. This problem aims to find the minimum-cost diet (servings of food items) that satisfies the eight nutritional requirements.
+
+
+### Libraries
+
+For this task, the following Python third part libraries were used:
+* Pandas - Data Wrangling and Processing
+* Matplotlib - Data Visualization
+* Seaborn - Data Visualization
+* PulP - Provides a modeling framework and LP optimization tool
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 ### Built With
@@ -154,7 +160,22 @@ _Below is an example of how you can instruct your audience on installing and set
 
 
 <!-- USAGE EXAMPLES -->
-## Usage
+## Method
+
+Initially, we have gathered information on the nutrition facts of five meals from the Internet, namely Kraft Mac & Cheese , Amy's Thai Pad Thai, Fresh Express Chopped Caesar Salad Kit, Spinach Scramble, and Salmon, Rice, and Broccolis. We selected pre-packaged and ready-to-eat meals that can be easily prepared with ingredients available in the package or a simple recipe that requires no more than five ingredients. The prices and nutritional information were collected from Mariano's website. Table 01 summarizes this information along with the price of the pre-packaged meals or the pro-rated meal cost. Please note that the price does not include any costs associated with food preparation, such as utility costs or labor.
+
+However, the amount of Calcium provided by these items were not enough to converge the problem, so we decided to include Fat Free Skim Milk in the diet as a cheap option for additional Calcium.
+
+#### Table 01: Nutrition facts and prices for the meal options.
+| Food Item                              |   Price ($) |   Energy (calories) |   Sodium (mg) |   Protein (g) |   Vitamin D (mcg) |   Calcium (mg) |   Iron (mg) |   Potassium (mg) |
+|:---------------------------------------|------------:|--------------------:|--------------:|--------------:|------------------:|---------------:|------------:|-----------------:|
+| Kraft Mac & Cheese                     |        0.46 |              250    |        560    |          9    |               0   |         110    |        2.5  |           330    |
+| Amy's Thai Pad Thai                    |        6.79 |              410    |        760    |         12    |               0   |          90    |        3.9  |           360    |
+| Fresh Express Chopped Caesar Salad Kit |        1.8  |              160    |        310    |          3    |               0   |          90    |        0.9  |           190    |
+| Spinach Scramble                       |        1.16 |              161.67 |        458.17 |         13.08 |               2   |          86.68 |        2.65 |           351.42 |
+| Salmon, Rice, and Broccolis            |        3.83 |              322.5  |        549.25 |         27.5  |              12.3 |          40.75 |        1.15 |           618.5  |
+| Fat Free Skim Milk                     |        0.46 |               80    |        120    |          8    |             100   |         300    |        0    |           390    |
+
 
 Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
 
@@ -162,6 +183,16 @@ _For more examples, please refer to the [Documentation](https://example.com)_
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+## Results
+
+| Food Item                              |   Model 01 |   Model 02 |   Model 03 |
+|:---------------------------------------|-----------:|-----------:|-----------:|
+| Amy's_Thai_Pad_Thai                    |        0   |        1   |        1   |
+| Fat_Free_Skim_Milk                     |       41.7 |       40.7 |       28   |
+| Fresh_Express_Chopped_Caesar_Salad_Kit |        0   |        1   |        1   |
+| Kraft_Mac_&_Cheese                     |       50.4 |       47   |       27.9 |
+| Salmon,_Rice,_and_Broccolis            |        0   |        1   |        3.9 |
+| Spinach_Scramble                       |        0   |        1   |       28   |
 
 
 <!-- ROADMAP -->
@@ -207,23 +238,12 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
-
-<!-- CONTACT -->
-## Contact
-
-Your Name - [@your_twitter](https://twitter.com/your_username) - email@example.com
-
-Project Link: [https://github.com/your_username/repo_name](https://github.com/your_username/repo_name)
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-
 <!-- ACKNOWLEDGMENTS -->
-## Acknowledgments
+## Reference
 
 Use this space to list resources you find helpful and would like to give credit to. I've included a few of my favorites to kick things off!
 
+1. [Camarena, Omar Antolín. "Standard form for Linear Programs." Instituto de Matemáticas, UNAM. Accessed on April 16, 2024](https://www.matem.unam.mx/~omar/math340/std-form.html)
 * [Choose an Open Source License](https://choosealicense.com)
 * [GitHub Emoji Cheat Sheet](https://www.webpagefx.com/tools/emoji-cheat-sheet)
 * [Malven's Flexbox Cheatsheet](https://flexbox.malven.co/)
@@ -250,7 +270,7 @@ Use this space to list resources you find helpful and would like to give credit 
 [license-shield]: https://img.shields.io/github/license/othneildrew/Best-README-Template.svg?style=for-the-badge
 [license-url]: https://github.com/othneildrew/Best-README-Template/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
-[linkedin-url]: https://linkedin.com/in/othneildrew
+[linkedin-url]: https://www.linkedin.com/in/hconsolo
 [product-screenshot]: images/screenshot.png
 [Next.js]: https://img.shields.io/badge/next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white
 [Next-url]: https://nextjs.org/
