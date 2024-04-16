@@ -151,7 +151,7 @@ _Below is an example of how you can instruct your audience on installing and set
 
 
 <!-- USAGE EXAMPLES -->
-## Usage
+## Method
 
 Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
 
@@ -159,6 +159,16 @@ _For more examples, please refer to the [Documentation](https://example.com)_
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+## Results
+
+| Food Item                              |   Model 01 |   Model 02 |   Model 03 |
+|:---------------------------------------|-----------:|-----------:|-----------:|
+| Amy's_Thai_Pad_Thai                    |        0   |        1   |        1   |
+| Fat_Free_Skim_Milk                     |       41.7 |       40.7 |       28   |
+| Fresh_Express_Chopped_Caesar_Salad_Kit |        0   |        1   |        1   |
+| Kraft_Mac_&_Cheese                     |       50.4 |       47   |       27.9 |
+| Salmon,_Rice,_and_Broccolis            |        0   |        1   |        3.9 |
+| Spinach_Scramble                       |        0   |        1   |       28   |
 
 
 <!-- ROADMAP -->
