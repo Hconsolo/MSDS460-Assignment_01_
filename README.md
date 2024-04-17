@@ -15,8 +15,8 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://upload.wikimedia.org/wikipedia/commons/7/7c/Northwestern_Wildcats_logo.svg">
-    <img src="Northwestern_Wildcats_logo.svg" alt="Logo" width="80" height="80">
+  <a href="https://github.com/Hconsolo/MSDS460-Assignment_01_">
+    <img src="002. Pictures Paper/Northwestern_Wildcats_logo.svg" alt="Logo" width="80" height="80">
   </a>
   <h3 align="center">Northwestern University</h3>
   <h3 align="center">MSDS 460-DL : Decision Analytics</h3>
