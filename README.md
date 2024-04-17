@@ -92,16 +92,40 @@ Project Link: [https://github.com/Hconsolo/MSDS460-Assignment_01_](https://githu
 
 [![Product Name Screen Shot][product-screenshot]](https://example.com)
 
-For this week’s assignment, our exercise applied linear programming (LP) to the diet problem. This problem aims to find the minimum-cost diet (servings of food items) that satisfies the eight nutritional requirements.
+In this assignment, we will be discussing the use of linear programming to solve the Stigler diet problem, with the help of Python. The problem aims to find a diet that meets specific nutritional requirements while minimizing the cost. We can achieve this by optimizing a linear objective function with linear constraints, which will give us the optimal combination of food items that meet our requirements at the lowest possible cost.
 
+We have used food prices for six meals and considered eight nutritional requirements to solve this problem. Our primary focus was to find the minimum-cost diet that would fulfill the necessary nutrients. In our research, we paid special attention to four specific nutrients: Vitamin D, Calcium, Iron, and Potassium. We did not include Sodium, Protein, and Energy in our study because these nutrients are commonly found in packaged foods or meat, poultry, and fish, which are good sources of protein. By excluding them, we were able to narrow down our research and make more informed decisions about our diet.
+
+Table 01 lists the constraints for each nutrient. We have also included a list of items that are good sources of essential nutrients according to the Dietary Guidelines for Americans (2024). The goal is that if any constraint cannot be quickly met with the proposed meals, we can add another item to provide the missing nutrient.
+
+| Component   | Max/Min   | Daily Amount and measure            | Important Food items                 |
+|:------------|:----------|:------------------------------------|:-------------------------------------|
+| Sodium      | Maximum   | 5,000 milligrams (mg)               | Not applicable                       |
+| Energy      | Minimum   | 2,000 Calories (kilocalories, kcal) | Not applicable                       |
+| Protein     | Minimum   | 50 grams (g)                        | Not applicable                       |
+| Vitamin D   | Minimum   | 20 micrograms (mcg)                 | Salmon, Milk, Soy Beverage           |
+| Calcium     | Minimum   | 1,300 milligrams (mg)               | Yogurt, Milk, Tofu                   |
+| Iron        | Minimum   | 18 milligrams (mg)                  | Spinach, Ready-to-eat cereal, Oyster |
+| Potassium   | Minimum   | 4,700 milligrams (mg)               | Yogurt, Milk, Fish                   |
 
 ### Libraries
 
-For this task, the following Python third part libraries were used:
+For this week’s assignment, our exercise applied linear programming (LP) to the diet problem. This problem aims to find the minimum-cost diet based on the price of the food serving for six meals to achieve the eight nutritional requirements based on Sodium, Energy, Protein, Vitamin D	Calcium, Iron, and Potassium.
+
 * Pandas - Data Wrangling and Processing
 * Matplotlib - Data Visualization
 * Seaborn - Data Visualization
 * PulP - Provides a modeling framework and LP optimization tool
+
+| Component   | Max/Min   | Daily Amount and measure            |
+|:------------|:----------|:------------------------------------|
+| Sodium      | Maximum   | 5,000 milligrams (mg)               |
+| Energy      | Minimum   | 2,000 Calories (kilocalories, kcal) |
+| Protein     | Minimum   | 50 grams (g)                        |
+| Vitamin D   | Minimum   | 20 micrograms (mcg)                 |
+| Calcium     | Minimum   | 1,300 milligrams (mg)               |
+| Iron        | Minimum   | 18 milligrams (mg)                  |
+| Potassium   | Minimum   | 4,700 milligrams (mg)               |
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -162,11 +186,16 @@ _Below is an example of how you can instruct your audience on installing and set
 <!-- USAGE EXAMPLES -->
 ## Method
 
-Initially, we have gathered information on the nutrition facts of five meals from the Internet, namely Kraft Mac & Cheese , Amy's Thai Pad Thai, Fresh Express Chopped Caesar Salad Kit, Spinach Scramble, and Salmon, Rice, and Broccolis. We selected pre-packaged and ready-to-eat meals that can be easily prepared with ingredients available in the package or a simple recipe that requires no more than five ingredients. The prices and nutritional information were collected from Mariano's website. Table 01 summarizes this information along with the price of the pre-packaged meals or the pro-rated meal cost. Please note that the price does not include any costs associated with food preparation, such as utility costs or labor.
+For this task, we employed Python and the following third part libraries to help with basic data handling tasks and to solve the the LP problem.
 
-However, the amount of Calcium provided by these items were not enough to converge the problem, so we decided to include Fat Free Skim Milk in the diet as a cheap option for additional Calcium.
+* Pandas - Data Wrangling and Processing
+* Matplotlib & Seaborn - Data Visualization
+* PulP - Provides a modeling framework and LP optimization tool
 
-#### Table 01: Nutrition facts and prices for the meal options.
+We have collected information on the nutritional value of five meals that are easily available online. These meals are Kraft Mac & Cheese, Amy's Thai Pad Thai, Fresh Express Chopped Caesar Salad Kit, Spinach Scramble, Salmon, Rice, and Broccoli. To ensure that all the necessary nutrients are covered, we have also included milk as a sixth meal option to be consumed during the day, since it is cheap and provides calcium, vitamin D, and potassium (Dietary Guidelines for Americans 2024). We chose pre-packaged and easy-to-prepare meals that require no more than five ingredients or have ingredients readily available in the package. We obtained the prices and nutritional information from Mariano's website (2024), and Table 02 summarizes this information along with the pre-packaged meal prices or the pro-rated cost per meal. The prices do not include any costs associated with food preparation, such as utility costs or labor. For the recipes that required preparation, we calculate the prorated costs and nutritional content based on the key ingredients based on the recipes from online websites. On the repository of this assignment one can find the nutritional values on a table, files containing the nutrition information and prices from Mariano’s website. 
+
+#### Table 02: Nutrition facts and prices for the meal options.
+
 | Food Item                              |   Price ($) |   Energy (calories) |   Sodium (mg) |   Protein (g) |   Vitamin D (mcg) |   Calcium (mg) |   Iron (mg) |   Potassium (mg) |
 |:---------------------------------------|------------:|--------------------:|--------------:|--------------:|------------------:|---------------:|------------:|-----------------:|
 | Kraft Mac & Cheese                     |        0.46 |              250    |        560    |          9    |               0   |         110    |        2.5  |           330    |
@@ -184,6 +213,8 @@ _For more examples, please refer to the [Documentation](https://example.com)_
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## Results
+
+#### Table 02: Nutrition facts and prices for the meal options.
 
 | Food Item                              |   Model 01 |   Model 02 |   Model 03 |
 |:---------------------------------------|-----------:|-----------:|-----------:|

@@ -1,8 +1,8 @@
-﻿Component,Max/Min,Daily Amount and measure
-Sodium,Maximum,"5,000 milligrams (mg)"
-Energy,Minimum,"2,000 Calories (kilocalories, kcal)"
-Protein,Minimum,50 grams (g)
-Vitamin D,Minimum,20 micrograms (mcg)
-Calcium,Minimum,"1,300 milligrams (mg)"
-Iron,Minimum,18 milligrams (mg)
-Potassium,Minimum,"4,700 milligrams (mg)"
+﻿Component,Max/Min,Daily Amount and measure,Important Food items
+Sodium,Maximum,"5,000 milligrams (mg)",Not applicable
+Energy,Minimum,"2,000 Calories (kilocalories, kcal)",Not applicable
+Protein,Minimum,50 grams (g),Not applicable
+Vitamin D,Minimum,20 micrograms (mcg),"Salmon, Milk, Soy Beverage"
+Calcium,Minimum,"1,300 milligrams (mg)","Yogurt, Milk, Tofu"
+Iron,Minimum,18 milligrams (mg),"Spinach, Ready-to-eat cereal, Oyster"
+Potassium,Minimum,"4,700 milligrams (mg)","Yogurt, Milk, Fish"
