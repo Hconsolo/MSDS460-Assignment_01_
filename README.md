@@ -93,9 +93,7 @@ Project Link: [https://github.com/Hconsolo/MSDS460-Assignment_01_](https://githu
 [![Product Name Screen Shot][product-screenshot]](https://example.com)
 
 In this assignment, we will be discussing the use of linear programming to solve the Stigler diet problem, with the help of Python. The problem aims to find a diet that meets specific nutritional requirements while minimizing the cost. We can achieve this by optimizing a linear objective function with linear constraints, which will give us the optimal combination of food items that meet our requirements at the lowest possible cost.
-
 We have used food prices for six meals and considered eight nutritional requirements to solve this problem. Our primary focus was to find the minimum-cost diet that would fulfill the necessary nutrients. In our research, we paid special attention to four specific nutrients: Vitamin D, Calcium, Iron, and Potassium. We did not include Sodium, Protein, and Energy in our study because these nutrients are commonly found in packaged foods or meat, poultry, and fish, which are good sources of protein. By excluding them, we were able to narrow down our research and make more informed decisions about our diet.
-
 Table 01 lists the constraints for each nutrient. We have also included a list of items that are good sources of essential nutrients according to the Dietary Guidelines for Americans (2024). The goal is that if any constraint cannot be quickly met with the proposed meals, we can add another item to provide the missing nutrient.
 
 | Component   | Max/Min   | Daily Amount and measure            | Important Food items                 |
