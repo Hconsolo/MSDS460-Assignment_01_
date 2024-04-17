@@ -27,7 +27,6 @@
 </div>
 
 
-
 <!-- TABLE OF CONTENTS -->
 <details>
   <summary>Table of Contents</summary>
@@ -52,8 +51,6 @@ Project Link: [https://github.com/Hconsolo/MSDS460-Assignment_01_](https://githu
 
 <!-- ABOUT THE PROJECT -->
 ## Introduction
-
-[![Product Name Screen Shot][product-screenshot]](https://canvas.northwestern.edu/)
 
 In this assignment, we will be discussing the use of linear programming to solve the Stigler diet problem, with the help of Python (Dantzig 1990). The problem aims to find a diet that meets specific nutritional requirements while minimizing the cost. We can achieve this by optimizing a linear objective function with linear constraints, which will give us the optimal combination of food items that meet our requirements at the lowest possible cost.
 
@@ -101,6 +98,8 @@ We have collected information on the nutritional value of five meals that are ea
 
 #### Table 03: Optimal weekly portion for each food item (meal).
 
+![Optimal Diet](https://github.com/Hconsolo/MSDS460-Assignment_01_/blob/main/Optimal_Diet.png)
+
 | Food Item (meal)                       |   Model 01 |   Model 02 |   Model 03 |
 |:---------------------------------------|-----------:|-----------:|-----------:|
 | Amy's_Thai_Pad_Thai                    |        0   |        1   |        1   |
@@ -110,6 +109,8 @@ We have collected information on the nutritional value of five meals that are ea
 | Salmon,_Rice,_and_Broccolis            |        0   |        1   |        3.9 |
 | Spinach_Scramble                       |        0   |        1   |       28   |
 
+
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- ACKNOWLEDGMENTS -->
@@ -117,16 +118,15 @@ We have collected information on the nutritional value of five meals that are ea
 
 1. [Camarena, Omar Antolín. "Standard form for Linear Programs." Instituto de Matemáticas, UNAM. Accessed on April 16, 2024](https://www.matem.unam.mx/~omar/math340/std-form.html)
 2. [Dantzig, George B. 1990. “The Diet Problem.” Informs. 20:4, 43–47](https://www.mpi-inf.mpg.de/fileadmin/inf/d1/teaching/winter18/Ideen/Materialien/Dantzig-Diet.pdf)
-3. [U.S. Department of Agriculture and U.S. Department of Health and Human Services. Dietary Guidelines for Americans, 2020-2025. 9th Edition. December 2020. Available at DietaryGuidelines.gov.](https://www.dietaryguidelines.gov/resources/2020-2025-dietary-guidelines-online-materials)
-
+3. [Mariano's. Website. Accessed at April 15, 2024](https://www.marianos.com/)
+4. [U.S. Department of Agriculture and U.S. Department of Health and Human Services. Dietary Guidelines for Americans, 2020-2025. 9th Edition. December 2020. Available at DietaryGuidelines.gov.](https://www.dietaryguidelines.gov/resources/2020-2025-dietary-guidelines-online-materials)
+   
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://www.linkedin.com/in/hconsolo
-[product-screenshot]: https://www.instructure.com/sites/default/files/image/2021-12/Canvas_logo_single_mark.png
 
