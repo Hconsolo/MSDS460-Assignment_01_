@@ -99,7 +99,7 @@ We optimized the problem using three different sets of constraints. These are th
 2. Model 02: We used the constraints in Table 01 and added a requirement for at least one serving per week (applicable to all meals).
 3. Model 03: We used the constraints in Table 01, which required at least one serving of meal per week and set a maximum limit of 28 servings per week (to promote a diverse diet).
 
-To convert this problem to the standard form, we used simple mathematical transformations to convert the minimization problem into a maximization problem. Below is the standard formulation of the problem.
+To convert this problem to the standard form, we used simple mathematical transformations to convert the minimization problem into a maximization problem as per Camarena (2024). Below is the standard formulation of the problem.
 
 ```{python}
 \* Diet_Problem_Standard *\
@@ -149,8 +149,6 @@ End
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## Results
-
-
 
 ![Optimal Diet](https://github.com/Hconsolo/MSDS460-Assignment_01_/blob/main/002.%20Pictures%20Paper/optimal_diet.png)
 
