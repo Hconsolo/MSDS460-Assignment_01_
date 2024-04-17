@@ -150,15 +150,25 @@ End
 
 ## Results
 
+We employed the optimization simplex algorithm with PulP to devise a dietary model, the solutions of which are illustrated in Figures 01 and 02. In Model 01, we found that the solution consisted of only two meals: milk and Kraft Mac and Cheese. It's crucial to underline that the solution fails to converge without milk, highlighting the pivotal role of this food item in maintaining a balanced diet. 
+
 ![Optimal Diet](https://github.com/Hconsolo/MSDS460-Assignment_01_/blob/main/002.%20Pictures%20Paper/optimal_diet.png)
 
 #### Figure 01: Optimal weekly portion for each food item (meal).
 
 ![Total Cost](https://github.com/Hconsolo/MSDS460-Assignment_01_/blob/main/002.%20Pictures%20Paper/total_cost.png)
 
+Moreover, when we stipulated the condition of having at least one meal per food item, the cost rose by almost 12 dollars. Once again, the simplex solution selected milk and Kraft Mac and Cheese, with one serving for the other meals. Shifting to Model 03, we observed that the weekly cost nearly doubled when we aimed to achieve a more diverse diet while maintaining the same nutrient targets. This indicates that a diversified diet can have a significant impact on one's budget. Interestingly, the solution found Salmon with rice and broccoli more attractive than Amy's Thai Pad Thai and Fresh Express Chopped Caesar Salad Kit. This suggests that preparing our meals is better than buying ready-to-heat frozen food or ready-to-eat meal kits.
+
+#### Figure 02: Optimal weekly cost for all consumed food item (meal).
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## Conclusion
+
+In this paper, we employed linear programming techniques to analyze a simplified Diet Problem, which is a well-known LP task. To ensure quick convergence of the solution, we took valuable insights from the Dietary Guidelines for Americans (2020). During the exercise, we gathered recipes and nutritional information from the Marianos website to create six meal options. We also included milk in the list of meals due to its high nutrient content, especially for calcium. 
+
+Based on Model 01, the optimal solution suggests that a diet with less variety, consisting of milk and mac and cheese, is the best. As we imposed more restrictions on the problem, the total cost of the solution worsened, which was expected. This indicates that a diversified diet can have a significant impact on one's budget. Our study suggests that preparing our meals is better than buying ready-to-heat frozen food or ready-to-eat meal kits.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -179,4 +189,3 @@ End
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://www.linkedin.com/in/hconsolo
-
