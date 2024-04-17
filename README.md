@@ -58,7 +58,7 @@ We have used food prices for six meals and considered eight nutritional requirem
 
 Table 01 lists the constraints for each nutrient. We have also included a list of items that are good sources of essential nutrients according to the Dietary Guidelines for Americans (2024). The goal is that if any constraint cannot be quickly met with the proposed meals, we can add another item to provide the missing nutrient.
 
-#### Table 01: Daily nutrient constraints for the diet problem together with important food items to consider.
+**Table 01: Daily nutrient constraints for the diet problem together with important food items to consider.**
 
 | Component   | Max/Min   | Daily Amount and measure            | Important Food items                 |
 |:------------|:----------|:------------------------------------|:-------------------------------------|
@@ -82,7 +82,7 @@ For this task, we employed Python and the following third part libraries to help
 
 We have collected information on the nutritional value of five meals that are easily available online. These meals are Kraft Mac & Cheese, Amy's Thai Pad Thai, Fresh Express Chopped Caesar Salad Kit, Spinach Scramble, Salmon, Rice, and Broccoli. To ensure that all the necessary nutrients are covered, we have also included milk as a sixth meal option to be consumed during the day, since it is cheap and provides calcium, vitamin D, and potassium (Dietary Guidelines for Americans 2020). We chose pre-packaged and easy-to-prepare meals that require no more than five ingredients or have ingredients readily available in the package. We obtained the prices and nutritional information from Mariano's website (2024), and Table 02 summarizes this information along with the pre-packaged meal prices or the pro-rated cost per meal. The prices do not include any costs associated with food preparation, such as utility costs or labor. For the recipes that required preparation, we calculate the prorated costs and nutritional content based on the key ingredients based on the recipes from online websites. On the repository of this assignment one can find the nutritional values on a table, files containing the nutrition information and prices from Mariano’s website.
 
-#### Table 02: Nutrition facts and prices for the meal options per serving.
+**Table 02: Nutrition facts and prices for the meal options per serving.**
 
 | Food Item (meal)                       |   Price ($) |   Energy (calories) |   Sodium (mg) |   Protein (g) |   Vitamin D (mcg) |   Calcium (mg) |   Iron (mg) |   Potassium (mg) |
 |:---------------------------------------|------------:|--------------------:|--------------:|--------------:|------------------:|---------------:|------------:|-----------------:|
@@ -154,13 +154,13 @@ We employed the optimization simplex algorithm with PulP to devise a dietary mod
 
 ![Optimal Diet](https://github.com/Hconsolo/MSDS460-Assignment_01_/blob/main/002.%20Pictures%20Paper/optimal_diet.png)
 
-#### Figure 01: Optimal weekly portion for each food item (meal).
+**Figure 01: Optimal weekly portion for each food item (meal).**
 
 ![Total Cost](https://github.com/Hconsolo/MSDS460-Assignment_01_/blob/main/002.%20Pictures%20Paper/total_cost.png)
 
 Moreover, when we stipulated the condition of having at least one meal per food item, the cost rose by almost 12 dollars. Once again, the simplex solution selected milk and Kraft Mac and Cheese, with one serving for the other meals. Shifting to Model 03, we observed that the weekly cost nearly doubled when we aimed to achieve a more diverse diet while maintaining the same nutrient targets. This indicates that a diversified diet can have a significant impact on one's budget. Interestingly, the solution found Salmon with rice and broccoli more attractive than Amy's Thai Pad Thai and Fresh Express Chopped Caesar Salad Kit. This suggests that preparing our meals is better than buying ready-to-heat frozen food or ready-to-eat meal kits.
 
-#### Figure 02: Optimal weekly cost for all consumed food item (meal).
+**Figure 02: Optimal weekly cost for all consumed food item (meal).**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
