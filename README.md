@@ -58,6 +58,8 @@ We have used food prices for six meals and considered eight nutritional requirem
 
 Table 01 lists the constraints for each nutrient. We have also included a list of items that are good sources of essential nutrients according to the Dietary Guidelines for Americans (2024). The goal is that if any constraint cannot be quickly met with the proposed meals, we can add another item to provide the missing nutrient.
 
+#### Table 01: Daily nutrient constraints for the diet problem together with important food items to consider.
+
 | Component   | Max/Min   | Daily Amount and measure            | Important Food items                 |
 |:------------|:----------|:------------------------------------|:-------------------------------------|
 | Sodium      | Maximum   | 5,000 milligrams (mg)               | Not applicable                       |
@@ -80,7 +82,7 @@ For this task, we employed Python and the following third part libraries to help
 
 We have collected information on the nutritional value of five meals that are easily available online. These meals are Kraft Mac & Cheese, Amy's Thai Pad Thai, Fresh Express Chopped Caesar Salad Kit, Spinach Scramble, Salmon, Rice, and Broccoli. To ensure that all the necessary nutrients are covered, we have also included milk as a sixth meal option to be consumed during the day, since it is cheap and provides calcium, vitamin D, and potassium (Dietary Guidelines for Americans 2020). We chose pre-packaged and easy-to-prepare meals that require no more than five ingredients or have ingredients readily available in the package. We obtained the prices and nutritional information from Mariano's website (2024), and Table 02 summarizes this information along with the pre-packaged meal prices or the pro-rated cost per meal. The prices do not include any costs associated with food preparation, such as utility costs or labor. For the recipes that required preparation, we calculate the prorated costs and nutritional content based on the key ingredients based on the recipes from online websites. On the repository of this assignment one can find the nutritional values on a table, files containing the nutrition information and prices from Mariano’s website.
 
-#### Table 02: Nutrition facts and prices for the meal options.
+#### Table 02: Nutrition facts and prices for the meal options per serving.
 
 | Food Item (meal)                       |   Price ($) |   Energy (calories) |   Sodium (mg) |   Protein (g) |   Vitamin D (mcg) |   Calcium (mg) |   Iron (mg) |   Potassium (mg) |
 |:---------------------------------------|------------:|--------------------:|--------------:|--------------:|------------------:|---------------:|------------:|-----------------:|
@@ -91,12 +93,56 @@ We have collected information on the nutritional value of five meals that are ea
 | Salmon, Rice, and Broccolis            |        3.83 |              322.5  |        549.25 |         27.5  |              12.3 |          40.75 |        1.15 |           618.5  |
 | Fat Free Skim Milk                     |        0.46 |               80    |        120    |          8    |             100   |         300    |        0    |           390    |
 
+We optimized the problem using three different sets of constraints. These are the models we used:
+
+1. Model 01: Only the constraints listed in Table 01 were used.
+2. Model 02: We used the constraints in Table 01 and added a requirement for at least one serving per week (applicable to all meals).
+3. Model 03: We used the constraints in Table 01, which required at least one serving of meal per week and set a maximum limit of 28 servings per week (to promote a diverse diet).
+
+To convert this problem to the standard form, we used simple mathematical transformations to convert the minimization problem into a maximization problem. Below is the standard formulation of the problem.
+
+\* Diet_Problem *\
+Maximize
+OBJ: 6.79 Amy's_Thai_Pad_Thai + 0.463333333333 Fat_Free_Skim_Milk
+ + 1.796 Fresh_Express_Chopped_Caesar_Salad_Kit
+ + 0.463333333333 Kraft_Mac_&_Cheese
+ + 3.8313953666 Salmon,_Rice,_and_Broccolis + 1.16026357773 Spinach_Scramble
+Subject To
+Calcium_(mg): 90 Amy's_Thai_Pad_Thai + 300 Fat_Free_Skim_Milk
+ + 90 Fresh_Express_Chopped_Caesar_Salad_Kit + 110 Kraft_Mac_&_Cheese
+ + 40.75 Salmon,_Rice,_and_Broccolis + 86.6752916667 Spinach_Scramble >= 9100
+Energy_(calories): 410 Amy's_Thai_Pad_Thai + 80 Fat_Free_Skim_Milk
+ + 160 Fresh_Express_Chopped_Caesar_Salad_Kit + 250 Kraft_Mac_&_Cheese
+ + 322.5 Salmon,_Rice,_and_Broccolis + 161.666666667 Spinach_Scramble >= 14000
+Iron_(mg): 3.9 Amy's_Thai_Pad_Thai
+ + 0.9 Fresh_Express_Chopped_Caesar_Salad_Kit + 2.5 Kraft_Mac_&_Cheese
+ + 1.15 Salmon,_Rice,_and_Broccolis + 2.64541666667 Spinach_Scramble >= 126
+Potassium_(mg): 360 Amy's_Thai_Pad_Thai + 390 Fat_Free_Skim_Milk
+ + 190 Fresh_Express_Chopped_Caesar_Salad_Kit + 330 Kraft_Mac_&_Cheese
+ + 618.5 Salmon,_Rice,_and_Broccolis + 351.416666667 Spinach_Scramble >= 32900
+Protein_(g): 12 Amy's_Thai_Pad_Thai + 8 Fat_Free_Skim_Milk
+ + 3 Fresh_Express_Chopped_Caesar_Salad_Kit + 9 Kraft_Mac_&_Cheese
+ + 27.5 Salmon,_Rice,_and_Broccolis + 13.0791666667 Spinach_Scramble >= 350
+Sodium_(mg): 760 Amy's_Thai_Pad_Thai + 120 Fat_Free_Skim_Milk
+ + 310 Fresh_Express_Chopped_Caesar_Salad_Kit + 560 Kraft_Mac_&_Cheese
+ + 549.25 Salmon,_Rice,_and_Broccolis + 458.166666667 Spinach_Scramble
+ <= 35000
+Vitamin_D_(mcg): 100 Fat_Free_Skim_Milk + 12.3 Salmon,_Rice,_and_Broccolis
+ + 2 Spinach_Scramble >= 140
+Bounds
+ 1 <= Amy's_Thai_Pad_Thai <= 28
+ 1 <= Fat_Free_Skim_Milk <= 28
+ 1 <= Fresh_Express_Chopped_Caesar_Salad_Kit <= 28
+ 1 <= Kraft_Mac_&_Cheese <= 28
+ 1 <= Salmon,_Rice,_and_Broccolis <= 28
+ 1 <= Spinach_Scramble <= 28
+End
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## Results
 
-#### Table 03: Optimal weekly portion for each food item (meal).
+
 
 ![Optimal Diet](https://github.com/Hconsolo/MSDS460-Assignment_01_/blob/main/Optimal_Diet.png)
 
@@ -109,7 +155,11 @@ We have collected information on the nutritional value of five meals that are ea
 | Salmon,_Rice,_and_Broccolis            |        0   |        1   |        3.9 |
 | Spinach_Scramble                       |        0   |        1   |       28   |
 
+#### Figure 01: Optimal weekly portion for each food item (meal).
 
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## Conclusion
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -120,6 +170,7 @@ We have collected information on the nutritional value of five meals that are ea
 2. [Dantzig, George B. 1990. “The Diet Problem.” Informs. 20:4, 43–47](https://www.mpi-inf.mpg.de/fileadmin/inf/d1/teaching/winter18/Ideen/Materialien/Dantzig-Diet.pdf)
 3. [Mariano's. Website. Accessed at April 15, 2024](https://www.marianos.com/)
 4. [U.S. Department of Agriculture and U.S. Department of Health and Human Services. Dietary Guidelines for Americans, 2020-2025. 9th Edition. December 2020. Available at DietaryGuidelines.gov.](https://www.dietaryguidelines.gov/resources/2020-2025-dietary-guidelines-online-materials)
+5. [Consolo Holanda, Humberto. Documentation Package Food. April 15, 2024](https://github.com/Hconsolo/MSDS460-Assignment_01_/tree/main/001.%20Documentation%20Packaged%20Food)
    
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
