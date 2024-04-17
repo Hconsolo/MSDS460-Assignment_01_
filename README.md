@@ -18,8 +18,11 @@
   <a href="https://upload.wikimedia.org/wikipedia/commons/7/7c/Northwestern_Wildcats_logo.svg">
     <img src="images/logo.png" alt="Logo" width="80" height="80">
   </a>
-
-  <h3 align="center">ASSIGNMENT 1: Linear Programming Example - The Diet Problem Revisited (Spring 2024)</h3>
+  <h1 align="center">Northwestern University</h1>
+  <h2 align="center">MSDS 460-DL : Decision Analytics</h2>
+  <h3 align="center">ASSIGNMENT 1: Linear Programming Example</h3>
+  <h4 align="center">The Diet Problem Revisited (Spring 2024)</h4>
+  <h4 align="center">April 16, 2023</h4>
 
 </div>
 
