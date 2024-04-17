@@ -128,4 +128,4 @@ We have collected information on the nutritional value of five meals that are ea
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://www.linkedin.com/in/hconsolo
-[product-screenshot]: 002. Pictures Paper/Northwestern_Wildcats_logo.svg
+[product-screenshot]: https://upload.wikimedia.org/wikipedia/commons/7/7c/Northwestern_Wildcats_logo.svg
