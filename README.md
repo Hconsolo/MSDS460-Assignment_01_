@@ -156,11 +156,13 @@ We employed the optimization simplex algorithm with PulP to devise a dietary mod
 
 **Figure 01: Optimal weekly portion for each food item (meal).**
 
-![Total Cost](https://github.com/Hconsolo/MSDS460-Assignment_01_/blob/main/002.%20Pictures%20Paper/total_cost.png)
 
 Moreover, when we stipulated the condition of having at least one meal per food item, the cost rose by almost 12 dollars. Once again, the simplex solution selected milk and Kraft Mac and Cheese, with one serving for the other meals. Shifting to Model 03, we observed that the weekly cost nearly doubled when we aimed to achieve a more diverse diet while maintaining the same nutrient targets. This indicates that a diversified diet can have a significant impact on one's budget. Interestingly, the solution found Salmon with rice and broccoli more attractive than Amy's Thai Pad Thai and Fresh Express Chopped Caesar Salad Kit. This suggests that preparing our meals is better than buying ready-to-heat frozen food or ready-to-eat meal kits.
 
+![Total Cost](https://github.com/Hconsolo/MSDS460-Assignment_01_/blob/main/002.%20Pictures%20Paper/total_cost.png)
+
 **Figure 02: Optimal weekly cost for all consumed food item (meal).**
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
